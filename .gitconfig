@@ -1,0 +1,13 @@
+[user]
+	email = fancky0427@gmail.com
+	name = YusukeYamao
+[alias]
+	s = status
+	sw = switch
+	b = branch
+	bd = branch -d
+	co = checkout
+	cob = checkout -b
+	a = add
+	cm = commit -m
+	graph = log --oneline --abbrev-commit --all --graph
