@@ -49,6 +49,8 @@ nnoremap K 5k
 nnoremap H ^
 nnoremap L $
 
+"全選択
+vnoremap v <ESC>ggVG
 
 "jkキーでESCキー
 inoremap <silent> jk <Esc>
