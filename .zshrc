@@ -22,6 +22,7 @@ colors
 alias ll='ls -l'
 alias la='ls -a'
 alias lg='ls -G'
+alias llg='ls -lG'
 alias lag='ls -aG'
 alias ..='cd ../'
 alias ...='cd ../../'
@@ -31,7 +32,7 @@ alias cds='dirs -v; echo -n "select number: "; read newdir; cd +"$newdir"'
 # cd時にhomeでなければauto_ls
 function chpwd(){
     if [[ $(pwd) != $HOME ]]; then;
-        ls
+        ls -laG
     fi
 }
 autoload chpwd
