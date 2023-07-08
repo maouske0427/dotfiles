@@ -2,8 +2,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
-export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$RBENV_ROOT/bin:$PATH"
 # 環境設定
 export LANG=ja_JP.UTF-8
 
@@ -22,12 +20,14 @@ colors
 alias ll='ls -l'
 alias la='ls -a'
 alias lg='ls -G'
-alias llg='ls -lG'
+alias lla='ls -al'
 alias lag='ls -aG'
+alias llag='ls -laG'
 alias ..='cd ../'
 alias ...='cd ../../'
 alias ~='cd ~'
 alias cds='dirs -v; echo -n "select number: "; read newdir; cd +"$newdir"'
+alias be='bundle exec'
 
 # cd時にhomeでなければauto_ls
 function chpwd(){

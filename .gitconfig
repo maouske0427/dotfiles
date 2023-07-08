@@ -11,3 +11,5 @@
 	a = add
 	cm = commit -m
 	graph = log --oneline --abbrev-commit --all --graph
+    dmb = "!git branch --merged | egrep -v '(\\*|develop|main)' | xargs git branch -d"
+
